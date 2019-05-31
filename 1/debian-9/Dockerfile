@@ -13,7 +13,7 @@ RUN ln -sf /dev/stderr /opt/bitnami/apache/logs/error_log
 RUN echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen && locale-gen
 
 COPY rootfs /
-ENV ALLOW_EMPTY_PASSWORD="no" \
+ENV ALLOW_EMPTY_PASSWORD="yes" \
     APACHE_HTTPS_PORT_NUMBER="" \
     APACHE_HTTP_PORT_NUMBER="" \
     APACHE_SET_HTTPS_PORT="no" \
